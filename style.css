@@ -1,0 +1,1047 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+}
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  transition: top 0.3s; 
+}
+
+.head2{
+    width: 1064px;
+    height: 54px;
+    background-color:#116E63;
+    display: flex; /* Use flexbox for equal spacing */
+    justify-content: space-evenly; /* Distribute space evenly */
+    align-items: center; /* Align items vertically */
+     /* Optional margin for spacing from head1 */
+
+}
+.head1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 319px;
+    height: 54px;
+    background-color: #FDA31b;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.head1 span {
+    margin-right: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #116E63;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon i:hover {
+    background-color:#116E63 ;
+    color:#FDA31b;
+}
+.icon i {
+    font-size: 16px;
+    color: white;
+}
+.head {
+    display: flex;
+    justify-content: space-between; /* Space between head1 and head2 */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add some padding */
+    transition: top 0.3s;
+ 
+}
+
+.head1 {
+    display: flex;
+    align-items: center; /* Center align icons and text vertically */
+}
+
+.icon {
+    margin-left: 10px; /* Space between social icons */
+    color: white; /* Icon color */
+}
+
+
+
+.contact-info {
+    margin-left: 20px; /* Space between contact items */
+    display: flex; /* Use flexbox for icons and text */
+    align-items: center; /* Center align icon and text vertically */
+    color: white;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 5px; /* Space between icon and text */
+}
+.contact-info a {
+    color: white; /* Change the link color to match your design */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 55px;
+    transition: top 0.3s;
+    z-index: 10; /* Keep navbar above other content */
+    background-color:#d5f2e3;
+
+    
+    
+   
+}
+
+.navbar-logo img {
+    height: 40px; /* Adjust the size of the logo */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #116E63;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FDA31b;
+}
+
+.search-btn {
+    width: 140px;
+    background-color: #FDA31b;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.search-btn:hover {
+    background-color: #116E63;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    /* Adjust padding as needed */
+
+    padding: 5px 80px; /* Adjust padding as needed */
+    margin-top: -40px; /* Move up by adding a negative margin */
+}
+
+.text-content {
+    flex: 1;
+    max-width: 500px; /* Control width of text content */
+    color: black;
+    margin: 0;
+    
+    position: relative;
+    top: -40px;
+    
+}
+.text-content h2{
+    color: #116E63;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #d0801a;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.search-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #d0801a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #116E63;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+   
+}
+
+
+.image-content img {
+    width: 100%;
+    max-width: 575px;
+    height: auto;
+    border-radius: 10px;
+    transform: translateX(20px); /* Use transform to shift it right */
+}
+button:first-of-type {
+    margin-right: 60px; /* Adjust value as needed */
+}
+.profile{
+    margin-top: 15px;
+    
+}
+.profile h4{
+    display: inline-block;
+    font-size: 20px;
+}
+.about{
+    display: flex;
+}
+.abttext{
+   
+    margin-left: 30px;
+    margin-right: 60px;
+}
+.abtimg{
+    margin-left: 50px;
+    height: auto;
+}
+.abttext h4{
+    color: #d0801a;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+    .abtimg {
+        width: auto; /* ya koi specific width */
+        height: auto; /* ya koi specific height */
+      }
+      
+
+.abttext h2{
+    font-size: 45px;
+}
+.headings{
+    display: flex;
+}
+.scholarship{
+    text-align: center;
+    color: white;
+    background-color: #d0801a;
+    height: 300px;
+    margin-top: 120px;
+  
+    padding-top: 70px;
+}
+.scholarship h1{
+    font-size: 50px;
+}
+.scholarship p{
+    font-size: 20px;
+    padding-right: 100px;
+   
+}
+.scholarship .scholarship-btn{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: #d0801a;
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    
+    
+
+}
+.scholarship.scholarship-btn:hover{
+    cursor: pointer;
+    background-color: #116E63;
+    color: white;
+    font-size: 17px;
+}
+.iconimg{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+/* Individual containers */
+.container-box {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+
+
+
+/* Text below image */
+.container-box p {
+    
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.star-rating {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color:#d0801a; /* Gold color for stars */
+}
+.star-rating button{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    background-color:#116E63;
+    margin-top: 8px;
+  
+}
+
+/* Star styling */
+.star {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.star:hover,
+.star:hover ~ .star {
+    color: #116E63; /* Light gray for inactive stars */
+}
+.icon-row {
+    display: flex;
+    gap: 250px; /* Space between items */
+    align-items:space-evenly;
+    font-size: 18px;
+}
+
+/* Icon with text */
+.icon-box {
+    display: flex;
+    align-items:center;
+    gap: 8px; /* Space between icon and text */
+    color:#d0801a; /* Text and icon color */
+    margin-top: 15px;
+}
+.container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container-box {
+    flex: 1 1 200px; /* Yeh har box ko ek row mein rakhega aur wrap bhi karega */
+    margin: 10px;
+}
+.container-box img {
+    max-width: 100%; /* Image ko container ki width se zyada nahi badhne deta */
+    height: auto;    /* Image ki height ko aspect ratio ke according maintain karta hai */
+}
+
+/* Footer Styles */
+footer {
+
+    position: relative;
+    margin-top: 80px;
+}
+
+.topFooter {
+    display: flex;
+    justify-content: space-evenly;
+   
+    width: 100vw;
+   
+  
+}
+
+form {
+    display: flex;
+    align-items: center; /* Ensure vertical centering */
+}
+
+.Inputs {
+    display: flex;
+    align-items: stretch; /* Ensures both elements stretch to the same height */
+    gap: 0; /* Remove any gap between input and button */
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+/* Input and Button Styles */
+#inp, .sub {
+    padding: 10px;
+    height: 40px; /* Set the same height for both */
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Input-specific styles */
+#inp {
+    width: 280px;
+    border-right: none;
+    border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+    flex: 1; /* Allow the input to take up remaining space */
+}
+
+/* Button-specific styles */
+.sub {
+    border-left: none;
+    border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+    background-color:#d0801a;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Vertically center content in the button */
+    justify-content: center; /* Horizontally center text inside button */
+}
+
+.headingss{
+    margin-top: 70px;
+    margin-left: 100px;
+    color: white;
+}
+footer{
+    margin-top: 80px;
+    height: 520px;
+    background-color:#116E63;
+    display: block;
+}
+.fooot{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.links ul{
+    list-style-type: none;
+    color:white;
+    font-size: 18px;
+    display: block;
+}
+.links li:hover{
+    color: #d0801a;
+
+}
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.links li{
+    margin-top: 10px;
+}
+.links h4{
+    color: #d0801a;
+}
+.fooot h4{
+    color: #FDA31b;
+    font-size: 22px;
+}
+.links ul li i{
+    color:#FDA31b;
+}
+.ico {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    color:white;
+    margin-top: 10px;
+}
+.ico i{
+color:white;
+
+}
+.ico:hover{
+    color: #d0801a;
+}
+.last{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 90px;
+
+}
+.ftabt.par{
+    color: white;
+}
+.headingss h2{
+    color: #d0801a;
+}
+.apy{
+    color:white;
+    background-color:#d0801a;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+
+}
+.exp{
+    color:white;
+    background-color:#d0801a;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+
+
+}
+.coursed{
+    text-align: center;
+    color:#116E63;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.coursed h1 .span{
+    color: #d0801a;
+}
+.contacts{
+    text-align: center;
+    color:#116E63;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.contacts h1 span{
+    color: #d0801a;
+}
+.events h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #116E63;
+    font-size: 60px;
+    
+}
+.events h1 span{
+    color: #d0801a;
+}
+
+.eventcontainer {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    height: 80px; /* Ya apne content ke hisaab se adjust karein */
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.date-box {
+    height: 100%;
+    width: 90px;
+    background-color:#d0801a;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.heading, .time{
+    flex: 1;
+    text-align: center;
+}
+.headings{
+    font-size: 18px;
+    margin-left: 25px;
+    color: black;
+    margin-top: 10px;
+}
+.heading:hover{
+    color: #d0801a;
+}
+
+.action-btn {
+    
+    background-color:#d0801a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.action-btn:hover {
+    background-color:#116E63;
+}
+.dollar{
+    background-color: #FDA31b;
+    font-size: 15px;
+    width: 80px;
+    border: none;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    
+  
+}
+.headingss.par{
+    color: #ccc;
+}
+/* Default styles for menu icon (hidden by default) */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #116E63;
+}
+
+/* Media query for screens up to 960px */
+@media (max-width: 960px) {
+    /* Hide the navigation links */
+    .nav-links {
+        display: none;
+        flex-direction: column; /* Stack links vertically for dropdown */
+        background-color: #d5f2e3;
+        position: absolute;
+        top: 55px; /* Adjust based on navbar height */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .topFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      
+    }
+    .par{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    form .Inputs{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show nav links when menu is open */
+    .nav-links.active {
+        display: flex;
+    }
+    .search-btn{
+        display: none;
+    }
+    .head{
+        display: none;
+    }
+    .container{
+        position: relative;
+        top: 0;
+    }
+}
+@media (max-width: 960px) {
+    .home {
+        flex-direction: column-reverse; /* Display text below image */
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top:60px;
+    }
+
+    .text-content {
+        margin-top: 20px; /* Add spacing above text content */
+        text-align: center; /* Center align text for better readability */
+    }
+
+    .image-content {
+        margin: 0; /* Remove any margin for proper stacking */
+        transform: none; /* Remove transform to center image */
+    }
+
+    .image-content img {
+        max-width: 100%; /* Ensure image uses full width of container */
+        height: auto;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 960px) {
+    .about {
+        flex-direction: column; /* Stack image on top of text */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .abtimg {
+        text-align: center; /* Center align image */
+    }
+
+    .abtimg img {
+        max-width: 90%; /* Reduce image size for smaller screens */
+        margin-bottom: 20px; /* Add spacing below image */
+    }
+
+    .abttext {
+        text-align: center; /* Center align text for readability */
+    }
+
+    .headings {
+        display: flex;
+        flex-direction: column; /* Stack headings vertically */
+        gap: 20px;
+    }
+    footer{
+        height: 680px;
+        background-color: #116E63;
+    }
+    .fit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fit img{
+        height: 100px;
+        width: 100px;
+    }
+ 
+}
+@media (max-width: 768px){
+    .links li{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scholarship h1 {
+        font-size: 2em;
+    }
+    
+    .scholarship p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+    
+    .scholarship button {
+        width: 80%; /* Make button width responsive */
+        
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 500px;
+        
+        padding-bottom: 500px;
+    }
+    .contacttext{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container-row {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .container-box {
+        flex: 1 1 45%; /* Make each box take 45% width for tablet screens */
+        margin: 10px 0; /* Remove left and right margin */
+    }
+
+    .icon-row {
+        gap: 15px; /* Reduced gap between icons on smaller screens */
+    }
+}
+
+/* Media query for mobile screens (width <= 768px) */
+@media screen and (max-width: 768px) {
+    .container-row {
+        justify-content: center; /* Center the containers on small screens */
+    }
+
+    .container-box {
+        flex: 1 1 100%; /* Make each box take full width on mobile */
+        margin: 10px 0; /* Remove margin between boxes */
+    }
+
+    .star-rating {
+        font-size: 1.5em; /* Smaller stars for mobile */
+    }
+
+    .icon-row {
+        gap: 10px; /* Further reduced gap for mobile screens */
+    }
+
+    /* Adjusting text size on mobile */
+    .container-box p {
+        font-size: 12px; /* Smaller text on mobile */
+    }
+    
+   
+}
+@media (max-width: 768px){
+    .symbol p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 540px){
+    .eventcontainer p{
+        font-size: 12px;
+    }
+}
+
+.contacts {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1000px;
+    height: 600px;
+    
+}
+
+.contacttext, .contactinput {
+    width: 96%; /* Adjusts to fit within the container */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 600px;
+}
+
+.contacttext {
+    background-color: #116E63;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.contacttext p{
+    margin-bottom: 50px;
+}
+
+.contactinput {
+    background-color: #d0801a;
+    border-radius: 8px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.contacttext h3, .contactinput h3 {
+    margin-top: 0;
+}
+
+.contact-infom {
+    margin: 20px 0;
+}
+.contact-infom a{
+    color: white;
+}
+
+
+.con {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.con .icon {
+    color: white;
+    font-size: 50px;
+}
+
+.coninp {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%; /* Adjust as needed */
+}
+
+textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%; /* Adjust as needed */
+    height: 100px;
+}
+.bttnreg {
+    background-color: #116E63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+#registration-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#registration-form h3{
+    color: #116E63;
+    margin-bottom: 30px;
+
+}
+.head3{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.head3 i{
+    margin-bottom: 20px;
+}
+.contacttext h4{
+    font-size: 20px;
+}
+.con i{
+    font-size: 30px;
+}
+.ftabt{
+    display: flex;
+    justify-content: space-between;
+}
+::selection {
+    background-color:#d0801a; /* Selection ka background color */
+    color: #ccc;
+   
+  }
+  .scroll-line {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 5px; /* Line ki width */
+    height: 0; /* Initial height */
+    background-color: #d0801a; /* Line ka color */
+    z-index: 1000;
+  }
+  .fit{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .fit p{
+    color: white;
+  }
+  .fit p:hover{
+    color: #d0801a;
+  }
+  .fitt{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .fitt i{
+    font-size: 30px;
+  }
+  
+  .iconn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDA31b;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.iconn i:hover {
+    background-color:#FDA31b ;
+    color:#116E63;
+}
+.iconn i {
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+
